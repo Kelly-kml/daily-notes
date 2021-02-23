@@ -3,12 +3,13 @@
  * @Date: 2021-02-23 11:47:56
  * @Description: 自定义图标，兼容原有antd图标
  * @LastEditors: kelly
- * @LastEditTime: 2021-02-23 14:14:32
+ * @LastEditTime: 2021-02-23 15:06:54
  */
 import React from 'react';
 import { createFromIconfontCN } from '@ant-design/icons';
 import { BASE_PATH } from '@/config';
 
+// 分生产环境和开发环境
 const isProd = process.env.NODE_ENV === 'production';
 const url = isProd ? `${BASE_PATH}/iconfont.js` : `/iconfont.js`;
 
